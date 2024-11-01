@@ -1,0 +1,206 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.hero {
+    background-image: url('../images/banniere.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+ }
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: calc(33.333% - 20px); 
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: #e9ecef;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #111;
+}
+
+.service-item.item-1 {
+    background-color: #d1fae5;
+    color: #f8d7da;
+}
+
+.service-item.item-2 {
+    background-color: #f8d7da;
+}
+
+.service-item.item-3 {
+    background-color: #a03e95;
+}
+
+.service-item.item-4 {
+    background-color: #a03e95;
+}
+
+.service-item.item-5 {
+   background-color: #f8d7da;
+}
+
+.service-item.item-6 {
+    background-color: #d1fae5;
+}
+
+.button {
+    background: #FF9800;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.service-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.service-link {
+    background: #FFEB3B;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    flex: 1 1 calc(30% - 20px);
+    box-sizing: border-box;
+}
+
+.service-link:hover {
+    transform: scale(1.05);
+}
+#why-choose-us {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#why-choose-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#why-choose-us p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content-blocks {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-block {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.content-block:target {
+    display: block;
+}
+
+.content-block h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-block p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact {
+    padding: 40px 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.grid-info {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.grid-info p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
+}
